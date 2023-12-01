@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             x:Class="BCS21090001_ProgressTest.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <ScrollView
+        HorizontalOptions="FillAndExpand"
+        VerticalOptions="FillAndExpand"
+        Margin="-5,0,-5,0"
+        BackgroundColor="Grey">
+        <Grid>
+            <Border
+                BackgroundColor="#2A2A2A"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Margin="0,75,0,0"
+                StrokeThickness="0">
+                <Border.StrokeShape>
+                    <RoundRectangle
+                        CornerRadius="25,25,0,0"/>
+
+                </Border.StrokeShape>
+            </Border>
+
+            <StackLayout>
+                <toolkit:AvatarView
+                    CornerRadius="75"
+                    BorderColor="Gold"
+                    BorderWidth="2"
+                    HeightRequest="115"
+                    WidthRequest="115"
+                    VerticalOptions="Start"
+                    HorizontalOptions="Center"
+                    Margin="0,25,0,0">
+                    <Image
+                        Source="profile.png"
+                        HeightRequest="120"
+                        WidthRequest="120"
+                        Aspect="AspectFill"/>
+
+                </toolkit:AvatarView>
+
+                <Label
+                    Text="Vincent van Gogh"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    FontSize="21"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0"/>
+
+                <Label
+                    Text="Dutch, 1853 - 1890"
+                    TextColor="White"
+                    FontSize="10"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,0"/>
+
+                <Label
+                    TextColor="White"
+                    FontSize="10"
+                    HorizontalOptions="Center"
+                    Text="Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a,  Was Dutch a, Was Dutch a, Was a Du"
+                    Margin="30,10,30,0"/>
+
+                <toolkit:Expander
+                    Direction="Up">
+                    <toolkit:Expander.Header>
+                        <Label
+                            Text=" Read More"
+                            TextColor="Orange"
+                            FontAttributes="Bold"
+                            FontSize="10"
+                            HorizontalOptions="End"
+                            Margin="0,0,40,0"/>
+
+                    </toolkit:Expander.Header>
+
+                    <Label
+                    TextColor="White"
+                    FontSize="10"
+                    HorizontalOptions="Center"
+                    Text="Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a, Was Dutch a,  Was Dutch a, Was Dutch a,"
+                    Margin="30,0,30,0"/>
+                </toolkit:Expander>
+
+                <Line
+                    BackgroundColor="Grey"
+                    HorizontalOptions="FillAndExpand"
+                    HeightRequest="1"
+                    VerticalOptions="Start"
+                    Margin="0,10,0,0"/>
+
+                <Grid
+                    ColumnDefinitions="*,*,*,*">
+
+                    <StackLayout
+                        Grid.Column="0"
+                        Margin="0,20,0,0">
+                        <Label
+                            Text="$7.5m"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="Record"
+                            TextColor="White"
+                            FontSize="12"
+                            HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                     <StackLayout
+                        Grid.Column="1"
+                        Margin="0,20,0,0">
+                        <Label
+                            Text="$3.5m"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="Average"
+                            TextColor="White"
+                            FontSize="12"
+                            HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                     <StackLayout
+                        Grid.Column="2"
+                        Margin="0,20,0,0">
+                        <Label
+                            Text="+598%"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="General"
+                            TextColor="White"
+                            FontSize="12"
+                            HorizontalOptions="Center"/>
+                    </StackLayout>
+
+                     <StackLayout
+                        Grid.Column="3"
+                        Margin="0,20,0,0">
+                        <Label
+                            Text="12"
+                            TextColor="White"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            HorizontalOptions="Center"/>
+                        <Label
+                            Text="Items"
+                            TextColor="White"
+                            FontSize="12"
+                            HorizontalOptions="Center"/>
+                    </StackLayout>
+                </Grid>
+
+
+                <Line
+                    BackgroundColor="Grey"
+                    HorizontalOptions="FillAndExpand"
+                    HeightRequest="1"
+                    VerticalOptions="Start"
+                    Margin="0,20,0,0"/>
+
+                <Label
+                    Text="Other Van Gogh Works"
+                    TextColor="White"
+                    FontSize="12"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Start"
+                    Margin="30,20,0,0"/>
+
+                <Grid
+                    ColumnDefinitions="*,*"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    Margin="30,20">
+                    <StackLayout
+                        Grid.Column="0"
+                        Margin="0,0,15,0">
+                        <Border
+                            StrokeThickness="0"
+                            BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+
+                            </Border.StrokeShape>
+                            <Image
+                                Source="drawone.png"
+                                Aspect="AspectFill"/>
+
+                        </Border>
+
+                        <Label
+                            Text="Peach Tree in Blossom"
+                            FontSize="12"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Margin="0,10,0,0"/>
+
+                        <Label
+                            Text="$950,000"
+                            FontSize="12"
+                            TextColor="White"
+                            Margin="0,5,0,20"/>
+
+                        <Border
+                            StrokeThickness="0"
+                            BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+
+                            </Border.StrokeShape>
+                            <Image
+                                Source="drawfive.png"
+                                Aspect="AspectFill"/>
+
+                        </Border>
+
+                        <Label
+                            Text="Peach Tree in Blossom"
+                            FontSize="12"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Margin="0,10,0,0"/>
+
+                        <Label
+                            Text="$950,000"
+                            FontSize="12"
+                            TextColor="White"
+                            Margin="0,5,0,20"/>
+
+                        <Border
+                            StrokeThickness="0"
+                            BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+
+                            </Border.StrokeShape>
+                            <Image
+                                Source="drawtwo.png"
+                                Aspect="AspectFill"/>
+
+                        </Border>
+
+                        <Label
+                            Text="Peach Tree in Blossom"
+                            FontSize="12"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Margin="0,10,0,0"/>
+
+                        <Label
+                            Text="$950,000"
+                            FontSize="12"
+                            TextColor="White"
+                            Margin="0,5,0,20"/>
+                    </StackLayout>
+
+                    <StackLayout
+                        Grid.Column="1"
+                        Margin="15,0,0,0">
+                        <Border
+                            StrokeThickness="0"
+                            BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+
+                            </Border.StrokeShape>
+                            <Image
+                                Source="drawsix.png"
+                                Aspect="AspectFill"/>
+
+                        </Border>
+
+                        <Label
+                            Text="Peach Tree in Blossom"
+                            FontSize="12"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Margin="0,10,0,0"/>
+
+                        <Label
+                            Text="$950,000"
+                            FontSize="12"
+                            TextColor="White"
+                            Margin="0,5,0,20"/>
+
+                        <Border
+                            StrokeThickness="0"
+                            BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+
+                            </Border.StrokeShape>
+                            <Image
+                                Source="drawthree.png"
+                                Aspect="AspectFill"/>
+
+                        </Border>
+
+                        <Label
+                            Text="Peach Tree in Blossom"
+                            FontSize="12"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Margin="0,10,0,0"/>
+
+                        <Label
+                            Text="$950,000"
+                            FontSize="12"
+                            TextColor="White"
+                            Margin="0,5,0,20"/>
+
+                        <Border
+                            StrokeThickness="0"
+                            BackgroundColor="White">
+                            <Border.StrokeShape>
+                                <RoundRectangle CornerRadius="10"/>
+
+                            </Border.StrokeShape>
+                            <Image
+                                Source="drawseven.png"
+                                Aspect="AspectFill"/>
+
+                        </Border>
+
+                        <Label
+                            Text="Peach Tree in Blossom"
+                            FontSize="12"
+                            FontAttributes="Bold"
+                            TextColor="White"
+                            Margin="0,10,0,0"/>
+
+                        <Label
+                            Text="$950,000"
+                            FontSize="12"
+                            TextColor="White"
+                            Margin="0,5,0,20"/>
+                    </StackLayout>
+
+                </Grid>
+            </StackLayout>
+
+        </Grid>
+    </ScrollView>
+
+
+</ContentPage>
+
